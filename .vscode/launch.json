@@ -1,0 +1,18 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "judge-api",
+            "request": "launch",
+            "program": "bin/server.dart",
+            "type": "dart",
+            "toolArgs": [
+                "--define=SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im15bXN5aGZtYmR1ZnBicnhzbnB1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgzMzg2ODYsImV4cCI6MjAyMzkxNDY4Nn0.YpRxvZR0WPd2aNX9rN2DpbBUaMg-OvSQ7u24bK8V-QY",
+                "--define=SUPABASE_URL=https://mymsyhfmbdufpbrxsnpu.supabase.co",
+            ]
+        }
+    ]
+}
