@@ -27,6 +27,6 @@ class Api {
           // Optional: if you want to allow credentials
           'Access-Control-Allow-Credentials': 'true',
         }))
-        .addHandler(router);
+        .addHandler(router.call);
   }
 }

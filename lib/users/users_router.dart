@@ -7,10 +7,6 @@ import 'package:shelf_router/shelf_router.dart';
 class UsersRouter {
   final UsersService userService;
 
-  Future<Response> _getUser(Request request) async {
-    return Response.ok('Hello, World!\n');
-  }
-
   Future<Response> _insertUser(Request request) async {
     final requestBody = await request.readAsString();
     final requestData = jsonDecode(requestBody);
@@ -23,7 +19,7 @@ class UsersRouter {
 
     router.post('/users/insert', _insertUser);
 
-    return router;
+    return router.call;
   }
 
   UsersRouter({required this.userService});
